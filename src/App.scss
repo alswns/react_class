@@ -1,0 +1,46 @@
+
+div.root{
+  display: flex;
+  flex-direction:column;
+  height: 100vh;
+}
+div.root>header{
+margin: 2px;
+border: 1px solid black;
+text-align: center;
+height: 20%;
+
+}
+
+div.root>nav{
+  margin: 2px;
+  border: 1px solid black;
+  text-align: center;
+  height: 10%;
+}
+
+div.root>div{
+display: flex;
+flex:1;
+height: 10%;
+}
+div.root>div>section{
+  flex: 2;
+  margin: 2px;
+  border: 1px solid black;
+}
+div.root>div>aside{
+  flex:1;
+  margin: 2px;
+  border: 1px solid black;
+}
+
+
+
+div.root>footer{
+  margin: 2px;
+display: block;
+border: 1px solid black;
+height: 20%;
+}
+
