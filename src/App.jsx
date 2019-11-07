@@ -17,20 +17,37 @@ function App() {
     </div>
     
     <div className="middle">
-      
+    
       <img src={require("./돋보기.png")} height={44} className='img'/>
     <input placeholder="Google 검색 또는 URL입력" id="input" src={require('./search.png')}></input>
-    <a href=""  className='mike'><img src={require("./mike.png")} height={44}/></a>
+    <a href="" className='mike'><img src={require("./keyboard.png")} alt="" /> </a>
+    <a href=""  ><img src={require("./mike.png")  } height={44}/></a>
+
     </div>
     
     
     <div className="bot">
-      <a href="https://www.naver.com"><img src={require("./naver.png")} alt=""/></a>
+      <a href="">Google 검색</a>
+      <a href="">I'm Feeling Lucky</a>
 
 
     </div>
+
+    <div className="foot">
+    <span className='country'>대한민국</span> <br></br>
+    <div className='원딜'>
+    <div id='ad'>
+    <a href=""  >광고</a>
+    <a href="">비즈니스</a>
+    <a href="">Google정보</a>
+    <a href="">검색의 원리</a>
     </div>
-    
+    <div>
+    <a href="" className='asdf'>개인정보처리방침</a><a href="">약관</a> <a href="">설정</a>
+    </div>
+    </div>
+    </div>
+    </div>
    
    
  
