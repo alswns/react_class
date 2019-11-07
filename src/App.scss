@@ -88,6 +88,7 @@ height: 44px;
   margin-left: 3%;
 }
 .foot{
+  box-shadow: 1px 1px 1px 1px black;
   display: block;
   width: 100%;
   line-height: 40px;
@@ -119,7 +120,7 @@ background-color: #F2F2F2;
   font-family: 'Apple SD Gothic Neo',arial,sans-serif;
 }
 .원딜{
-box-shadow: 1px 1px 1px 1px black;
+  box-shadow: 1px 1px 1px 1px black;
   display: flex;
   justify-content: space-between;
   align-items : center;
