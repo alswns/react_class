@@ -10,16 +10,23 @@ class App extends React.Component {
       value: ""
     };
   }
+
+    onClickDel=(idx)=>()=>{
+      const items=this.state.items
+      this.setState({
+        items:[...items.slice(idx,1),...items.slice(idx+1)]
+      })
+    }
     del=(key)=>{
-      this.setState(
-        state => ({
-          items: [
-            ...state.items.slice(0, key),
-            ...state.items.slice(key + 1)
-          ]
-        }),
+      console.log(key)
+      const newItem=[...this.state.items]
+      newItem.splice(key,1)
+      this.setState({
+        
+          items : newItem
+           
+      }
       )
-      
     }
 
   onClickAdd = e => {
@@ -46,7 +53,7 @@ class App extends React.Component {
         <div id='over'>
         {this.state.items.map((value, idx) => (
           <div className='items'>
-          <TodoItem key={idx} value={value} index={idx} del ={this.del} />
+          <TodoItem key={Math.random()} value={value} del ={()=>this.del(idx)} />
           </div>
           ))}
           </div>
